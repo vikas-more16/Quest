@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quests - Learning Quest</title>
+    <link rel="stylesheet" href="quests.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/150x50?text=Learning+Quest" alt="Learning Quest Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="quests-page">
+        <div class="quests-header">
+            <h1>Available Quests</h1>
+            <p>Choose a quest to embark on your learning adventure!</p>
+        </div>
+
+        <div class="quest-filters">
+            <label for="subject">Filter by Subject:</label>
+            <select id="subject">
+                <option value="all">All</option>
+                <option value="math">Math</option>
+                <option value="grammar">Grammar</option>
+                <option value="science">Science</option>
+            </select>
+
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="all">All</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div class="quest-cards">
+            <div class="quest-card" data-category="math" data-difficulty="medium">
+                <h3>Math Marvels</h3>
+                <p><strong>Difficulty:</strong> Medium</p>
+                <p><strong>Category:</strong> Math</p>
+                <p>Join the adventure and master math through fun challenges and puzzles!</p>
+                <a href="quest-details.html" class="cta-button">Start Quest</a>
+            </div>
+
+            <div class="quest-card" data-category="grammar" data-difficulty="easy">
+                <h3>Grammar Galaxy</h3>
+                <p><strong>Difficulty:</strong> Easy</p>
+                <p><strong>Category:</strong> Grammar</p>
+                <p>Explore the galaxy of grammar rules and improve your writing skills!</p>
+                <a href="quest-details.html" class="cta-button">Start Quest</a>
+            </div>
+
+            <div class="quest-card" data-category="science" data-difficulty="hard">
+                <h3>Science Island</h3>
+                <p><strong>Difficulty:</strong> Hard</p>
+                <p><strong>Category:</strong> Science</p>
+                <p>Discover amazing science facts and experiments in a thrilling island adventure!</p>
+                <a href="quest-details.html" class="cta-button">Start Quest</a>
+            </div>
+
+            <div class="quest-card" data-category="math" data-difficulty="easy">
+                <h3>Math Magic</h3>
+                <p><strong>Difficulty:</strong> Easy</p>
+                <p><strong>Category:</strong> Math</p>
+                <p>Solve magical math puzzles and learn through fun interactions!</p>
+                <a href="quest-details.html" class="cta-button">Start Quest</a>
+            </div>
+
+            <div class="quest-card" data-category="grammar" data-difficulty="medium">
+                <h3>Grammar Quest</h3>
+                <p><strong>Difficulty:</strong> Medium</p>
+                <p><strong>Category:</strong> Grammar</p>
+                <p>Master grammar through fun challenges and quizzes!</p>
+                <a href="quest-details.html" class="cta-button">Start Quest</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Learning Quest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="quests.js"></script>
+</body>
+</html>
