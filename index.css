@@ -270,3 +270,82 @@ footer .footer-content p {
         transform: translateY(0);
     }
 }
+/* Balloon Animation Styles */
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes welcomeTextFloat {
+    0% {
+        transform: translateY(50vh);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.balloon-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.balloon {
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    animation: floatUp 8s linear infinite;
+}
+
+.balloon::before {  /* Balloon string */
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background: #fff;
+    bottom: -30px;
+    left: 50%;
+}
+
+.balloon-1 { left: 10%; animation-delay: 0s; }
+.balloon-2 { left: 30%; animation-delay: 2s; }
+.balloon-3 { left: 50%; animation-delay: 4s; }
+.balloon-4 { left: 70%; animation-delay: 1s; }
+.balloon-5 { left: 90%; animation-delay: 3s; }
+
+.balloon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#hero .hero-content h1 {
+    animation: welcomeTextFloat 4s ease-out forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Add these to your existing CSS file */

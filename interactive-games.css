@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f9ff;
+    background-color:#fdebdd;
     color: #333;
 }
 
@@ -18,7 +18,7 @@ a {
 
 /* Header */
 header {
-    background-color: #ffca28;
+    background-color: #ebb794;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
@@ -119,7 +119,7 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #ffca28;
+    background-color: #ebb794;
     padding: 20px;
     text-align: center;
 }
